@@ -23,7 +23,6 @@
     &--theme--yellow{
         background: $yellow;
         color: black;
-        text-transform: none;
 
         &:hover{
             color: white;
@@ -34,6 +33,8 @@
         background: transparent;
         color: white;
         text-transform: none;
+        font-weight: 400;
+        font-size: 18px;
 
         &:hover{
             color: $yellow;

@@ -5,6 +5,7 @@
     margin-right: 17px;
 
     &--checkbox{
+        margin-right: 0;
         .radio__visible{
             border-radius: 4px;
 
@@ -13,7 +14,11 @@
             }
         }
     }
+    &:last-child{
+        margin-right: 0;
+    }
 }
+
 .radio__elem{
     display: none;
 

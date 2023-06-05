@@ -79,7 +79,7 @@ img {
   height: 100vh;
   min-height: 650px;
   color: #fff;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .hero__title-section {
@@ -216,7 +216,6 @@ img {
 .btn--theme--yellow {
   background: #FEDB3F;
   color: black;
-  text-transform: none;
 }
 .btn--theme--yellow:hover {
   color: white;
@@ -225,6 +224,8 @@ img {
   background: transparent;
   color: white;
   text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
 }
 .btn--theme--transparent:hover {
   color: #FEDB3F;
@@ -395,13 +396,13 @@ img {
       -ms-flex: 1;
           flex: 1;
   margin-left: 38px;
+  margin-bottom: 16px;
 }
 
 .reviews__title {
   font-size: 27px;
   font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 16px;
   color: black;
 }
 
@@ -482,6 +483,9 @@ img {
   display: flex;
   margin-bottom: 5px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   -webkit-box-flex: 1;
@@ -532,11 +536,17 @@ img {
           user-select: none;
   margin-right: 17px;
 }
+.radio--checkbox {
+  margin-right: 0;
+}
 .radio--checkbox .radio__visible {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
   background: url("https://github.com/volodmen/project3/blob/main/img/tick.png?raw=true") center center no-repeat;
+}
+.radio:last-child {
+  margin-right: 0;
 }
 
 .radio__elem {
@@ -580,6 +590,9 @@ img {
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .fixed-menu__link {
