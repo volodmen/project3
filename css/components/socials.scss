@@ -1,0 +1,22 @@
+.socials__list{
+    top: rem(49px);
+    right: rem(300px);
+
+}
+.socials__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem(5px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.socials__link{
+    display: block;
+    text-decoration: none;
+    width: rem(36px);
+    height: rem(36px);
+    background: center center no-repeat;
+}

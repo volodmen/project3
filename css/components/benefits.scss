@@ -1,5 +1,9 @@
 .benefits{
     display: flex;
+
+    @include phones{
+        flex-direction: column;
+    }
 }
 
 .benefits__item{
@@ -7,12 +11,17 @@
     padding: 0 3%;
     position: relative;
 
+
     &:before{
         content: url("https://raw.githubusercontent.com/volodmen/project3/f251c9010874560f28ef1c3573c3a7400261cd9e/img/shape.svg");
         position: absolute;
-        top: 53px;
+        top: rem(53px);
         right: 0;
         transform: translateX(50%);
+
+        @include tablets{
+            display: none;
+        }
     }
 
     &:first-child{
@@ -24,6 +33,15 @@
 
         &:before{
             display: none;
+        }
+    }
+
+    @include phones{
+        padding: 0;
+        margin-bottom: rem(13px);
+
+        &:last-child{
+            margin-bottom: 0;
         }
     }
 }

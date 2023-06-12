@@ -1,10 +1,16 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breackpoints
+
+$tablets: 768px;
+$phones: 480px;
 
 //color
 $grey: #666666;
 $yellow:#FEDB3F;
+
+@import "media";
 
 //z-indexes
 
@@ -34,3 +40,9 @@ $z-fixed-menu:100;
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/menu";
+@import "components/hamburger";
+@import "components/footer";
+@import "components/contacts";
+@import "components/map";
+@import "components/socials";

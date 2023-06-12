@@ -1,9 +1,9 @@
 .btn{
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 800;
-    padding: 22px 41px;
+    padding: rem(22px) rem(41px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     display: inline-block;
@@ -34,7 +34,7 @@
         color: white;
         text-transform: none;
         font-weight: 400;
-        font-size: 18px;
+        font-size: rem(18px);
 
         &:hover{
             color: $yellow;
