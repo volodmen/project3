@@ -6,9 +6,11 @@
 
     @include tablets{
         background: url("https://github.com/volodmen/project3/blob/main/img/cta_tablets.jpg?raw=true") center top no-repeat;
+        background-size:cover;
     }
 
     @include phones{
         background: url("https://github.com/volodmen/project3/blob/main/img/cta_phones.jpg?raw=true") center top no-repeat;
+        background-size:cover;
     }
 }

@@ -140,6 +140,112 @@
                     </ul>
                 </div>
             </section>
+            <section class="section products-section">
+                <div class="container">
+                    <div class="poducts-slider">
+                        <div class="product-slider__arrows">
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev">
+                            </a>
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--next">
+                            </a>
+                        </div>
+                        <ul class="products">
+                            <li class="products__item product">
+                                <div class="product__container">
+                                    <div class="product__col product__col-img">
+                                    </div>
+                                    <div class="product__col product__col-text">
+                                        <div class="product__options">
+                                            <div class="product__options-image">
+                                                <svg class="group__icon">
+                                                    <use xlink:href="./css/components/sprite.svg#group"></use>
+                                                </svg>
+                                                <div class="product__options-text">параметры</div>
+                                            </div>
+                                            <div class="float">
+                                                <ul class="float__list">
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#lenght"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Длина доски</div>
+                                                        <div class="float__subtitle">от 2,5 м</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#width"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Ширина доски</div>
+                                                        <div class="float__subtitle">от 40 м</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#thickness"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Толщина</div>
+                                                        <div class="float__subtitle">8 см</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#hours"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Срок службы</div>
+                                                        <div class="float__subtitle">5 лет</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#weight"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Вес</div>
+                                                        <div class="float__subtitle">7-8 кг</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product__title">Лонгборд 2.0</div>
+                                        <div class="product__text">Устойчивая доска для новичков. 
+                                            На них легко лежать, сидеть, грести, разгребаться на волны и ехать. 
+                                            Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, 
+                                            не прилагая особых усилий ехать по ним.</div>
+                                        <div class="product__values">
+                                            <Ul class="product__list">
+                                                <li class="product__item">
+                                                    <div class="board__text">Длина доски</div>
+                                                    <div class="size__text">от 2,5 метров</div>
+                                                </li>
+                                                <li class="product__item">
+                                                    <div class="board__text">Ширина доски</div>
+                                                    <div class="size__text">от 40 сантиметров</div>
+                                                </li>
+                                            </Ul>
+                                        </div>
+                                        <div class="product__price">
+                                        <div class="product__price-item">7000 ₽</div>
+                                        <a href="#" class="btn btn--theme--white">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="products__item product">
+                                <div class="product__container"></div>
+                            </li>
+                            <li class="products__item product">
+                                <div class="product__container"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <section class="section">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
@@ -331,11 +437,29 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
-    <div class="hamburger" id="hamburger">
-        <span class="hamburger__plank"></span>
-        <span class="hamburger__plank"></span>
-        <span class="hamburger__plank"></span>
+    <div class="burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
     </div>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay__submenu" id="overlay__submenu">
+          <nav class="submenu">
+            <ul class="submenu__list">
+                <li class="submenu__item"><a href="#" class="submenu__link">О нас</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Серфборды</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Команда</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Меню</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Отзывы</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Как мы работаем</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+      
+    <script src="/index.js"></script>
 </body>
 
 </html>

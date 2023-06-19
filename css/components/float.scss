@@ -1,0 +1,39 @@
+.float{
+    position: absolute;
+    height: rem(291px);
+    width: rem(273px);
+    border-radius: rem(4px);
+    background: #F8FAF9;
+    display: none;
+}
+
+.float__list{
+    display: flex;
+    flex-direction: column;
+    height: rem(291px);
+    width: rem(273px);
+    justify-content: space-around;
+    padding: rem(30px) rem(24px);
+}
+
+.float__item{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.float__icon{
+    width: rem(30px);
+    height: rem(30px);
+
+}
+.float__title{
+    font-size: rem(16px);
+    font-weight: 500;
+}
+
+.float__subtitle{
+    font-size: rem(16px);
+    font-weight: 400;
+}
