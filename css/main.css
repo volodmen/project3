@@ -1074,7 +1074,7 @@ img {
 }
 
 .product__col-img {
-  background: url("https://github.com/volodmen/project3/blob/main/img/longbord1.png?raw=true") top center no-repeat, url("/img/Vector2.png") top 63% center no-repeat;
+  background: url("https://github.com/volodmen/project3/blob/main/img/longbord1.png?raw=true") top center no-repeat, url("https://github.com/volodmen/project3/blob/main/img/Vector2.png?raw=true") top 63% center no-repeat;
   padding-right: 2.2222222222rem;
 }
 @media screen and (max-width: 768px) {
