@@ -22,7 +22,12 @@
         padding: rem(50px) rem(45px) rem(34px);
     }
 }
-
+.reviews__item{
+    display: none;
+}
+.reviews__item--active{
+    display: flex;
+}
 .reviews__display-inner{
     display: flex;
 
@@ -83,4 +88,8 @@
 .reviews__switcher{
     display: flex;
     justify-content: center;
+}
+
+.reviews__item--active{
+    display: flex;
 }

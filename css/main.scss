@@ -15,6 +15,7 @@ $yellow:#FEDB3F;
 //z-indexes
 
 $z-fixed-menu:100;
+$z-modal:101;
 
 //normalize
 @import url("https://necolas.github.io/normalize.css/latest/normalize.css");
@@ -51,3 +52,5 @@ $z-fixed-menu:100;
 @import "components/products-section";
 @import "components/products";
 @import "components/float";
+@import "components/team";
+@import "components/modal";

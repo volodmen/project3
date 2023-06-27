@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surfboard</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 </head>
 
 <body>
@@ -144,12 +145,12 @@
                 <div class="container">
                     <div class="poducts-slider">
                         <div class="product-slider__arrows">
-                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev">
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev" data-vector="prev" id="left">
                             </a>
-                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--next">
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--next" data-vector="next" id="right">
                             </a>
                         </div>
-                        <ul class="products">
+                        <ul class="products" id="products">
                             <li class="products__item product">
                                 <div class="product__container">
                                     <div class="product__col product__col-img">
@@ -161,8 +162,7 @@
                                                     <use xlink:href="./css/components/sprite.svg#group"></use>
                                                 </svg>
                                                 <div class="product__options-text">параметры</div>
-                                            </div>
-                                            <div class="float">
+                                                <div class="float">
                                                 <ul class="float__list">
                                                     <li class="float__item">
                                                         <div class="float__image">
@@ -211,6 +211,8 @@
                                                     </li>
                                                 </ul>
                                             </div>
+                                            </div>
+                                            
                                         </div>
                                         <div class="product__title">Лонгборд 2.0</div>
                                         <div class="product__text">Устойчивая доска для новичков. 
@@ -237,13 +239,201 @@
                                 </div>
                             </li>
                             <li class="products__item product">
-                                <div class="product__container"></div>
-                            </li>
-                            <li class="products__item product">
-                                <div class="product__container"></div>
+                                <div class="product__container">
+                                    <div class="product__col product__col-img product__col-img--shortboard">
+                                    </div>
+                                    <div class="product__col product__col-text">
+                                        <div class="product__options">
+                                            <div class="product__options-image">
+                                                <svg class="group__icon">
+                                                    <use xlink:href="./css/components/sprite.svg#group"></use>
+                                                </svg>
+                                                <div class="product__options-text">параметры</div>
+                                                <div class="float">
+                                                <ul class="float__list">
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#lenght"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Длина доски</div>
+                                                        <div class="float__subtitle">от 2,5 м</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#width"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Ширина доски</div>
+                                                        <div class="float__subtitle">от 40 м</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#thickness"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Толщина</div>
+                                                        <div class="float__subtitle">8 см</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#hours"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Срок службы</div>
+                                                        <div class="float__subtitle">5 лет</div>
+                                                    </li>
+                                                    <li class="float__item">
+                                                        <div class="float__image">
+                                                            <svg class="float__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#weight"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="float__title">Вес</div>
+                                                        <div class="float__subtitle">7-8 кг</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="product__title">Шортборд</div>
+                                        <div class="product__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
+                                            в трубах.
+                                            </div>
+                                        <div class="product__values">
+                                            <Ul class="product__list">
+                                                <li class="product__item">
+                                                    <div class="board__text">Длина доски</div>
+                                                    <div class="size__text">от 1,5 метров</div>
+                                                </li>
+                                                <li class="product__item">
+                                                    <div class="board__text">Ширина доски</div>
+                                                    <div class="size__text">от 30 сантиметров</div>
+                                                </li>
+                                            </Ul>
+                                        </div>
+                                        <div class="product__price">
+                                        <div class="product__price-item">12000 ₽</div>
+                                        <a href="#" class="btn btn--theme--white">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
+                </div>
+            </section>
+            <section class="section team-section">
+                <div class="container">
+                    <div class="section__title">Команда</div>
+                    <ul class="team team--version--desktop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/boris.jpg?raw=true" alt="team member" class="team__member-pic">
+                            </div>
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__content-title">Главный технолог</div>
+                                    <div class="team__content-subtitle">Отвечает за материалы и разработку досок</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/olga.jpg?raw=true" alt="team member" class="team__member-pic">
+                            </div>
+                            <button class="team__title" type="button">Ольга Невзорова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__content-title">Дизайнер</div>
+                                    <div class="team__content-subtitle">Создает дизайн серфбордов</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/ingvar.jpg?raw=true" alt="team member" class="team__member-pic">
+                            </div>
+                            <button class="team__title" type="button">Ингвар Нильсон</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__content-title">Спортсмен</div>
+                                    <div class="team__content-subtitle">Учавствует в разработке серфбордов</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/katy.jpg?raw=true" alt="team member" class="team__member-pic">
+                            </div>
+                            <button class="team__title" type="button">Екатерина Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__content-title">Тестировщик</div>
+                                    <div class="team__content-subtitle">Ломает доски пополам</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="team team--version--laptop">
+                        <li class="team__item">
+                            <button class="team__title" type="button">Борис Федорович  
+                            </button>
+                            
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/boris.jpg?raw=true" alt="team member" class="team__member-pic">
+                                    </div>
+                                    <div class="team__content-title">Главный технолог</div>
+                                    <div class="team__content-subtitle">Отвечает за материалы и разработку досок</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Ольга Невзорова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/olga.jpg?raw=true" alt="team member" class="team__member-pic">
+                                    </div>
+                                    <div class="team__content-title">Дизайнер</div>
+                                    <div class="team__content-subtitle">Создает дизайн серфбордов</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Ингвар Нильсон</button>
+
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/ingvar.jpg?raw=true" alt="team member" class="team__member-pic">
+                                    </div>
+                                    <div class="team__content-title">Спортсмен</div>
+                                    <div class="team__content-subtitle">Учавствует в разработке серфбордов</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Екатерина Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/katy.jpg?raw=true" alt="team member" class="team__member-pic">
+                                    </div>
+                                    <div class="team__content-title">Тестировщик</div>
+                                    <div class="team__content-subtitle">Ломает доски пополам</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="section">
@@ -251,42 +441,83 @@
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
                         <div class="reviews__display">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="https://github.com/volodmen/project3/blob/main/img/Helga.jpg?raw=true"
-                                        alt="Helga avatar" class="interactive-avatar__img">
-                                </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Лучший дизайн</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я увидела доски на сайте и влюбилась в их дизайн.
-                                            К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды -
-                                            волшебница!
-                                            Она учла все мои предпочтения и комментарии. В итоге получился прекрасный
-                                            дизайн.
-                                            А я катаюсь на доске, которая мне нравится)
-                                        </p>
+                            <ul class="reviews__list">
+                                <li class="reviews__item reviews__item--active" data-linked-with="one">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="https://github.com/volodmen/project3/blob/main/img/Helga.jpg?raw=true"
+                                                alt="Helga avatar" class="interactive-avatar__img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Лучший дизайн</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я увидела доски на сайте и влюбилась в их дизайн.
+                                                    К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды -
+                                                    волшебница!
+                                                    Она учла все мои предпочтения и комментарии. В итоге получился прекрасный
+                                                    дизайн.
+                                                    А я катаюсь на доске, которая мне нравится)
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">Ольга Макарова</div>
+                                        </article>
                                     </div>
-                                    <div class="reviews__author">Ольга Макарова</div>
-                                </article>
-                            </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="two">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="https://github.com/volodmen/project3/blob/main/img/Mark.jpg?raw=true"
+                                                alt="Helga avatar" class="interactive-avatar__img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Нереальная скорость</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">Марк Брюлов</div>
+                                        </article>
+                                    </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="three">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="https://github.com/volodmen/project3/blob/main/img/Vasiliy.jpg?raw=true"
+                                                alt="Helga avatar" class="interactive-avatar__img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Устойчивость и безопасность</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. 
+                                                    Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">Василий Поперечный</div>
+                                        </article>
+                                    </div>
+                                </li>
+                            </ul>
+                            
                         </div>
                         <ul class="reviews__switcher">
                             <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" class="interactive-avatar__link" data-open="one">
                                     <img src="https://github.com/volodmen/project3/blob/main/img/Helga.jpg?raw=true"
                                         alt="Helga avatar" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" class="interactive-avatar__link" data-open="two">
                                     <img src="https://github.com/volodmen/project3/blob/main/img/Mark.jpg?raw=true"
                                         alt="Helga avatar" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" class="interactive-avatar__link" data-open="three">
                                     <img src="https://github.com/volodmen/project3/blob/main/img/Vasiliy.jpg?raw=true"
                                         alt="Helga avatar" class="interactive-avatar__img">
                                 </a>
@@ -458,8 +689,22 @@
           </nav>
         </div>
     </div>
-      
-    <script src="./index.js"></script>
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__content">Сообщение отправлено</div>
+            <div class="modal__button-container">
+                <a href="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
+            </div>
+        </div>
+    </div>    
+    <script src="./scripts/query-3.7.0.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/slider.js" ></script>
+    <script src="./scripts/acco.js" ></script>
+    <script src="./scripts/modal.js" defer></script>
+    
 </body>
 
 </html>

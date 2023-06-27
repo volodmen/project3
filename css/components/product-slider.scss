@@ -1,3 +1,27 @@
-.product__slider--arrow{
+.product__slider{
+    position: relative;
+}
+
+.product-slider__arrow{
+    background: url("https://raw.githubusercontent.com/volodmen/project3/c7716a221554a44b237c3adbe45a75639eb98392/img/right.svg") center center no-repeat;
+    background-size: contain;
+    width: rem(24px);
+    height: rem(40px);
     position: absolute;
+    z-index: 10;
+    top: 36%;
+
+    &--direction--next{
+        right: 5%;
+        
+    }
+
+    &--direction--prev{
+        left: 5%;
+        transform: rotate(-180deg);
+    }
+
+    @include tablets{
+        top: 33%;
+    }
 }
