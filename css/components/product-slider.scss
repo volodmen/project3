@@ -9,7 +9,7 @@
     height: rem(40px);
     position: absolute;
     z-index: 10;
-    top: 36%;
+    top: 27%;
 
     &--direction--next{
         right: 5%;
@@ -22,6 +22,6 @@
     }
 
     @include tablets{
-        top: 33%;
+        top: 26%;
     }
 }

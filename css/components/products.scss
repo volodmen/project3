@@ -1,3 +1,7 @@
+.products__slider{
+    overflow: hidden;
+}
+
 .products{
     display: flex;
     position: relative;
@@ -6,7 +10,7 @@
 }
 
 .products__item{
-    margin-right: rem(650px);
+    min-width: 100%;
 
     &:last-child{
         margin-right: 0;
@@ -61,8 +65,16 @@
 
 .product__options{
     margin-bottom: rem(40px);
+
     @include tablets{
         display: none;
+    }
+
+    &:hover{
+        .float{
+            left: 100%;
+            opacity: 1;
+        }
     }
 }
 

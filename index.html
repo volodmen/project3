@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surfboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero">
+            <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <svg class="logo">
@@ -21,13 +22,20 @@
                         </svg>
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Серфборды</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="benefits" class="menu__link">О
+                                        нас</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="products"
+                                        class="menu__link">Серфборды</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a>
+                                </li>
+                                <li class="menu__item"><a href="#" data-scroll-to="products-menu"
+                                        class="menu__link">Меню</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="reviews"
+                                        class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="player" class="menu__link">Как мы
+                                        работаем</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="footer"
+                                        class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -43,7 +51,7 @@
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для серфинга</h1>
                         <div class="hero__title-desc">Самый большой выбор серфбордов в мире</div>
-                        <a href="#" class="btn btn--theme--white">Заказать</a>
+                        <a href="#" data-scroll-to="form" class="btn btn--theme--white">Заказать</a>
                     </div>
                     <div class="hero__icon-section">
                         <ul class="feature">
@@ -75,7 +83,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title hedline__title">Почему Surfboard?</h2>
@@ -141,13 +149,15 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-section">
+            <section data-sidemenu-theme="black" data-section-id="products" class="section products-section">
                 <div class="container">
                     <div class="poducts-slider">
                         <div class="product-slider__arrows">
-                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev" data-vector="prev" id="left">
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev"
+                                data-vector="prev" id="left">
                             </a>
-                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--next" data-vector="next" id="right">
+                            <a href="#" class="product-slider__arrow product-slider__arrow--direction--next"
+                                data-vector="next" id="right">
                             </a>
                         </div>
                         <ul class="products" id="products">
@@ -156,68 +166,112 @@
                                     <div class="product__col product__col-img">
                                     </div>
                                     <div class="product__col product__col-text">
-                                        <div class="product__options">
-                                            <div class="product__options-image">
-                                                <svg class="group__icon">
-                                                    <use xlink:href="./css/components/sprite.svg#group"></use>
-                                                </svg>
-                                                <div class="product__options-text">параметры</div>
-                                                <div class="float">
-                                                <ul class="float__list">
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#lenght"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Длина доски</div>
-                                                        <div class="float__subtitle">от 2,5 м</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#width"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Ширина доски</div>
-                                                        <div class="float__subtitle">от 40 м</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#thickness"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Толщина</div>
-                                                        <div class="float__subtitle">8 см</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#hours"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Срок службы</div>
-                                                        <div class="float__subtitle">5 лет</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#weight"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Вес</div>
-                                                        <div class="float__subtitle">7-8 кг</div>
-                                                    </li>
-                                                </ul>
+                                        <div class="product__ingredients">
+                                            <div class="ingredients">
+                                                <div class="ingredients__button">
+                                                    <div class="ingredients__button-icon">
+                                                        <svg class="group__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#group"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="product__options-text">параметры</div>
+                                                </div>
+                                                <div class="ingredients__dropdown">
+                                                    <table class="ingredients__table">
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use
+                                                                        xlink:href="./css/components/sprite.svg#lenght">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Длина доски</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">от 1,5 м</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use xlink:href="./css/components/sprite.svg#width">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Ширина доски</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">от 30 см</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use
+                                                                        xlink:href="./css/components/sprite.svg#thickness">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Толщина</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">8 см</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use xlink:href="./css/components/sprite.svg#hours">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Срок службы</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">5 лет</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use
+                                                                        xlink:href="./css/components/sprite.svg#weight">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Вес</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">7-8 кг</span>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
                                             </div>
-                                            </div>
-                                            
                                         </div>
                                         <div class="product__title">Лонгборд 2.0</div>
-                                        <div class="product__text">Устойчивая доска для новичков. 
-                                            На них легко лежать, сидеть, грести, разгребаться на волны и ехать. 
-                                            Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, 
+                                        <div class="product__text">Устойчивая доска для новичков.
+                                            На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
+                                            Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и
+                                            не спеша,
                                             не прилагая особых усилий ехать по ним.</div>
                                         <div class="product__values">
                                             <Ul class="product__list">
@@ -232,8 +286,8 @@
                                             </Ul>
                                         </div>
                                         <div class="product__price">
-                                        <div class="product__price-item">7000 ₽</div>
-                                        <a href="#" class="btn btn--theme--white">Заказать</a>
+                                            <div class="product__price-item">7000 ₽</div>
+                                            <a href="#" class="btn btn--theme--white">Заказать</a>
                                         </div>
                                     </div>
                                 </div>
@@ -243,68 +297,114 @@
                                     <div class="product__col product__col-img product__col-img--shortboard">
                                     </div>
                                     <div class="product__col product__col-text">
-                                        <div class="product__options">
-                                            <div class="product__options-image">
-                                                <svg class="group__icon">
-                                                    <use xlink:href="./css/components/sprite.svg#group"></use>
-                                                </svg>
-                                                <div class="product__options-text">параметры</div>
-                                                <div class="float">
-                                                <ul class="float__list">
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#lenght"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Длина доски</div>
-                                                        <div class="float__subtitle">от 2,5 м</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#width"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Ширина доски</div>
-                                                        <div class="float__subtitle">от 40 м</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#thickness"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Толщина</div>
-                                                        <div class="float__subtitle">8 см</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#hours"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Срок службы</div>
-                                                        <div class="float__subtitle">5 лет</div>
-                                                    </li>
-                                                    <li class="float__item">
-                                                        <div class="float__image">
-                                                            <svg class="float__icon">
-                                                            <use xlink:href="./css/components/sprite.svg#weight"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="float__title">Вес</div>
-                                                        <div class="float__subtitle">7-8 кг</div>
-                                                    </li>
-                                                </ul>
+                                        <div class="product__ingredients">
+                                            <div class="ingredients">
+                                                <div class="ingredients__button">
+                                                    <div class="ingredients__button-icon">
+                                                        <svg class="group__icon">
+                                                            <use xlink:href="./css/components/sprite.svg#group"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="product__options-text">параметры</div>
+                                                </div>
+                                                <div class="ingredients__dropdown">
+                                                    <table class="ingredients__table">
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use
+                                                                        xlink:href="./css/components/sprite.svg#lenght">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Длина доски</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">от 1,5 м</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use xlink:href="./css/components/sprite.svg#width">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Ширина доски</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">от 30 см</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use
+                                                                        xlink:href="./css/components/sprite.svg#thickness">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Толщина</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">8 см</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use xlink:href="./css/components/sprite.svg#hours">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Срок службы</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">5 лет</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="ingredients__table-row">
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__icon-container">
+                                                                <svg class="ingredients__icon">
+                                                                    <use
+                                                                        xlink:href="./css/components/sprite.svg#weight">
+                                                                    </use>
+                                                                </svg>
+                                                            </td>
+                                                            <td
+                                                                class="ingredients__table-cell ingredients__text-container">
+                                                                <span class="ingredients__text">Вес</span>
+                                                            </td>
+                                                            <td class="ingredients__table-cell">
+                                                                <span class="ingredients__text">7-8 кг</span>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
                                             </div>
-                                            </div>
-                                            
                                         </div>
                                         <div class="product__title">Шортборд</div>
-                                        <div class="product__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
+                                        <div class="product__text">Самые быстрые доски для профессионалов. Размеры
+                                            шортбордов позволяют быстро набирать скорость, делать различные трюки на
+                                            волне, включая резкие повороты и развороты, флоатеры (проезды по самому
+                                            гребню волны), различные прыжки с вращениями или без, а также катание
                                             в трубах.
-                                            </div>
+                                        </div>
                                         <div class="product__values">
                                             <Ul class="product__list">
                                                 <li class="product__item">
@@ -318,8 +418,8 @@
                                             </Ul>
                                         </div>
                                         <div class="product__price">
-                                        <div class="product__price-item">12000 ₽</div>
-                                        <a href="#" class="btn btn--theme--white">Заказать</a>
+                                            <div class="product__price-item">12000 ₽</div>
+                                            <a href="#" class="btn btn--theme--white">Заказать</a>
                                         </div>
                                     </div>
                                 </div>
@@ -328,13 +428,14 @@
                     </div>
                 </div>
             </section>
-            <section class="section team-section">
+            <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
                 <div class="container">
                     <div class="section__title">Команда</div>
                     <ul class="team team--version--desktop">
                         <li class="team__item">
                             <div class="team__member">
-                                <img src="https://github.com/volodmen/project3/blob/main/img/boris.jpg?raw=true" alt="team member" class="team__member-pic">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/boris.jpg?raw=true"
+                                    alt="team member" class="team__member-pic">
                             </div>
                             <button class="team__title" type="button">Борис Федорович</button>
                             <div class="team__content">
@@ -346,7 +447,8 @@
                         </li>
                         <li class="team__item">
                             <div class="team__member">
-                                <img src="https://github.com/volodmen/project3/blob/main/img/olga.jpg?raw=true" alt="team member" class="team__member-pic">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/olga.jpg?raw=true"
+                                    alt="team member" class="team__member-pic">
                             </div>
                             <button class="team__title" type="button">Ольга Невзорова</button>
                             <div class="team__content">
@@ -358,7 +460,8 @@
                         </li>
                         <li class="team__item">
                             <div class="team__member">
-                                <img src="https://github.com/volodmen/project3/blob/main/img/ingvar.jpg?raw=true" alt="team member" class="team__member-pic">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/ingvar.jpg?raw=true"
+                                    alt="team member" class="team__member-pic">
                             </div>
                             <button class="team__title" type="button">Ингвар Нильсон</button>
                             <div class="team__content">
@@ -370,7 +473,8 @@
                         </li>
                         <li class="team__item">
                             <div class="team__member">
-                                <img src="https://github.com/volodmen/project3/blob/main/img/katy.jpg?raw=true" alt="team member" class="team__member-pic">
+                                <img src="https://github.com/volodmen/project3/blob/main/img/katy.jpg?raw=true"
+                                    alt="team member" class="team__member-pic">
                             </div>
                             <button class="team__title" type="button">Екатерина Иванова</button>
                             <div class="team__content">
@@ -383,13 +487,14 @@
                     </ul>
                     <ul class="team team--version--laptop">
                         <li class="team__item">
-                            <button class="team__title" type="button">Борис Федорович  
+                            <button class="team__title" type="button">Борис Федорович
                             </button>
-                            
+
                             <div class="team__content">
                                 <div class="team__content-block">
                                     <div class="team__member">
-                                        <img src="https://github.com/volodmen/project3/blob/main/img/boris.jpg?raw=true" alt="team member" class="team__member-pic">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/boris.jpg?raw=true"
+                                            alt="team member" class="team__member-pic">
                                     </div>
                                     <div class="team__content-title">Главный технолог</div>
                                     <div class="team__content-subtitle">Отвечает за материалы и разработку досок</div>
@@ -401,7 +506,8 @@
                             <div class="team__content">
                                 <div class="team__content-block">
                                     <div class="team__member">
-                                        <img src="https://github.com/volodmen/project3/blob/main/img/olga.jpg?raw=true" alt="team member" class="team__member-pic">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/olga.jpg?raw=true"
+                                            alt="team member" class="team__member-pic">
                                     </div>
                                     <div class="team__content-title">Дизайнер</div>
                                     <div class="team__content-subtitle">Создает дизайн серфбордов</div>
@@ -414,7 +520,8 @@
                             <div class="team__content">
                                 <div class="team__content-block">
                                     <div class="team__member">
-                                        <img src="https://github.com/volodmen/project3/blob/main/img/ingvar.jpg?raw=true" alt="team member" class="team__member-pic">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/ingvar.jpg?raw=true"
+                                            alt="team member" class="team__member-pic">
                                     </div>
                                     <div class="team__content-title">Спортсмен</div>
                                     <div class="team__content-subtitle">Учавствует в разработке серфбордов</div>
@@ -426,7 +533,8 @@
                             <div class="team__content">
                                 <div class="team__content-block">
                                     <div class="team__member">
-                                        <img src="https://github.com/volodmen/project3/blob/main/img/katy.jpg?raw=true" alt="team member" class="team__member-pic">
+                                        <img src="https://github.com/volodmen/project3/blob/main/img/katy.jpg?raw=true"
+                                            alt="team member" class="team__member-pic">
                                     </div>
                                     <div class="team__content-title">Тестировщик</div>
                                     <div class="team__content-subtitle">Ломает доски пополам</div>
@@ -436,7 +544,51 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section data-sidemenu-theme="white" data-section-id="products-menu" class="section products-menu-section">
+                <h1 class="section__title products-menu-section__title">Меню</h1>
+                <ul class="products-menu">
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title">
+                            <img class="products-menu__image"
+                                src="https://github.com/volodmen/project3/blob/main/img/Slide1.jpg?raw=true">
+                            <div class="products-menu__text">Лонгборды</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">Устойчивая доска для новичков. На них легко лежать,
+                                сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title">
+                            <img class="products-menu__image"
+                                src="https://github.com/volodmen/project3/blob/main/img/Slide2.jpg?raw=true">
+                            <div class="products-menu__text">Шортборды</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">Устойчивая доска для новичков. На них легко лежать,
+                                сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title">
+                            <img class="products-menu__image"
+                                src="https://github.com/volodmen/project3/blob/main/img/Slide3.jpg?raw=true">
+                            <div class="products-menu__text">Софттопы</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">Устойчивая доска для новичков. На них легко лежать,
+                                сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
@@ -453,9 +605,11 @@
                                             <div class="reviews__text">
                                                 <p>
                                                     Я увидела доски на сайте и влюбилась в их дизайн.
-                                                    К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды -
+                                                    К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды
+                                                    -
                                                     волшебница!
-                                                    Она учла все мои предпочтения и комментарии. В итоге получился прекрасный
+                                                    Она учла все мои предпочтения и комментарии. В итоге получился
+                                                    прекрасный
                                                     дизайн.
                                                     А я катаюсь на доске, которая мне нравится)
                                                 </p>
@@ -474,8 +628,11 @@
                                             <h3 class="reviews__title">Нереальная скорость</h3>
                                             <div class="reviews__text">
                                                 <p>
-                                                    Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
-                                                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                                                    Я занимаюсь профессиональным спортом. Доверил изготовление доски для
+                                                    соревнований ребятам из Surfboard и не пожалел: 1 место на
+                                                    соревнованиях.
+                                                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для
+                                                    победы на соревнованиях!
                                                 </p>
                                             </div>
                                             <div class="reviews__author">Марк Брюлов</div>
@@ -492,8 +649,10 @@
                                             <h3 class="reviews__title">Устойчивость и безопасность</h3>
                                             <div class="reviews__text">
                                                 <p>
-                                                    Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. 
-                                                    Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                                                    Я заказывал доски для своих детей. Мне было важно, чтобы они были
+                                                    устойчивые, так как безопасность детей на первом месте.
+                                                    Доски были изготовлены по индивидуальным замерам с учетом роста и
+                                                    веса каждого ребенка. Теперь дети катаются и им нравится!
                                                 </p>
                                             </div>
                                             <div class="reviews__author">Василий Поперечный</div>
@@ -501,7 +660,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            
+
                         </div>
                         <ul class="reviews__switcher">
                             <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
@@ -527,7 +686,31 @@
                 </div>
 
             </section>
-            <section class="section order-direction section--font-color--white">
+            <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
+                <div class="container">
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="player-section__container">
+                        <div class="player active">
+                            <div class="player__wrapper">
+                                <div id="yt-player" class="player__elem"></div>
+                                <div class="player__splash"></div>
+                            </div>
+                            <div class="player__controls">
+                                <button class="player__start"></button>
+                                <div class="player__playback">
+                                    <button class="player__playback-button"></button>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-completed">0:00</span> :
+                                    <span class="player__duration-estimate">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-sidemenu-theme="white" data-section-id="form"
+                class="section order-direction section--font-color--white">
                 <div class="container">
                     <h2 class="section__title">Закажите доску</h2>
                     <form action="" class="form">
@@ -602,9 +785,8 @@
 
                 </div>
             </section>
-            <section class="section footer__container">
-                <div id="#" class="map">
-                    <img src="https://github.com/volodmen/project3/blob/main/img/map.jpg?raw=true" alt="" class="map">
+            <section data-sidemenu-theme="black" data-section-id="footer" class="section footer__container">
+                <div id="map">
                 </div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -652,20 +834,20 @@
                     </div>
                 </footer>
             </section>
-
         </div>
     </div>
-    <nav class="fixed-menu">
+    <nav class="fixed-menu fixed-menu__black">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item fixed-menu__item--active"><a href="#" data-scroll-to="hero"
+                    class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="benefits" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="products" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="team" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="products-menu" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="player" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="form" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="#" data-scroll-to="foooter" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
     <div class="burger" id="burger">
@@ -673,20 +855,20 @@
         <span class="burger__line"></span>
         <span class="burger__line"></span>
     </div>
-    
+
     <div class="overlay" id="overlay">
         <div class="overlay__submenu" id="overlay__submenu">
-          <nav class="submenu">
-            <ul class="submenu__list">
-                <li class="submenu__item"><a href="#" class="submenu__link">О нас</a></li>
-                <li class="submenu__item"><a href="#" class="submenu__link">Серфборды</a></li>
-                <li class="submenu__item"><a href="#" class="submenu__link">Команда</a></li>
-                <li class="submenu__item"><a href="#" class="submenu__link">Меню</a></li>
-                <li class="submenu__item"><a href="#" class="submenu__link">Отзывы</a></li>
-                <li class="submenu__item"><a href="#" class="submenu__link">Как мы работаем</a></li>
-                <li class="submenu__item"><a href="#" class="submenu__link">Контакты</a></li>
-            </ul>
-          </nav>
+            <nav class="submenu">
+                <ul class="submenu__list">
+                    <li class="submenu__item"><a href="#" class="submenu__link">О нас</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Серфборды</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Команда</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Меню</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Отзывы</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Как мы работаем</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
     <div class="modal" id="modal">
@@ -696,15 +878,20 @@
                 <a href="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
             </div>
         </div>
-    </div>    
-    <script src="./scripts/query-3.7.0.slim.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    </div>
+    <script src="./scripts/query-3.7.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/tabs.js"></script>
-    <script src="./scripts/slider.js" ></script>
-    <script src="./scripts/acco.js" ></script>
-    <script src="./scripts/modal.js" defer></script>
-    
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/acco.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/map.js"></script>
+    <script src="./scripts/menu-acco.js"></script>
+
+
 </body>
 
 </html>

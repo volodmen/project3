@@ -34,6 +34,15 @@
     @include tablets{
         margin-right: 0;
     } 
+
+    &.accordeon__item-active{
+        .team__title{
+            &:after{
+                content: "";
+                transform: rotate(-180deg);
+            }
+        }
+    }
 }
 
 .team__member{
@@ -52,6 +61,19 @@
     text-decoration: none;
     border: none;
     background: none;
+
+    &:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-right-width: rem(4px);
+        border-left-width: rem(4px);
+        border-top: rem(6px) solid black;
+        border-bottom: 0;
+        display: block;
+        margin-left: rem(5px);
+    }
 }
 
 .team__content{
@@ -78,7 +100,6 @@
 }
 
 .team--version--desktop .team__content{
-    position: absolute;
     top: 100%;
 }
 

@@ -1,0 +1,82 @@
+.products-menu-section{
+    background: url("https://github.com/volodmen/project3/blob/main/img/Slider.jpg?raw=true")center center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.products-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+
+
+
+    &__item{
+        display: flex;
+    }
+
+    &__image{
+        width: 100%;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title{
+        position: relative;
+        width: rem(70px);
+
+        &:after{
+            content: "";
+            display: block;
+            top: 0;
+            bottom: rem(0px);
+            left: 0;
+            right: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, .4);
+        }
+    }
+
+    &__text{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 50%;
+        transform: rotate(-90deg) translateY(-50%);
+        transform-origin: 0 0;
+        white-space: nowrap;
+        line-height: 1;
+        font-size: rem(40px);
+        font-weight: bold;
+    }
+
+    &__content{
+        background: rgba(51, 53, 55, 0.90);
+        width: 0;
+        position: relative;
+        overflow: hidden;
+        transition: width .7s;
+    }
+
+    &__container{
+        padding: rem(40px) rem(73px) rem(45px) rem(26px);
+    }
+
+    &__close{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        border: none;
+        background: transparent;
+    }
+}
+
+.section__title.products-menu-section__title {
+    position: absolute;
+    top: rem(90px);
+    left: rem(80px);
+    color: #fff;
+}

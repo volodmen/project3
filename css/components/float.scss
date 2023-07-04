@@ -1,25 +1,36 @@
 .float{
+    color: #2f3234;
     position: absolute;
-    height: rem(291px);
-    width: rem(366px);
-    border-radius: rem(4px);
-    background: #F8FAF9;
-    display: none;
+    left: rem(9999px);
+    top: 0;
+    width: rem(270px);
+    background: rgba(255, 255,255,.93);
+    border-radius: rem(5px);
+    padding: rem(26px) rem(12px) rem(26px) rem(35px);
+    transition: opacity .3s;
+    opacity:0;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 50%;
+        width: rem(30px);
+        left: rem(-29px);
+    }
+
 }
 
 .float__list{
-    display: flex;
-    flex-direction: column;
-    height: rem(291px);
-    width: rem(273px);
-    justify-content: space-around;
-    padding: rem(30px) rem(24px);
+    width: 100%;
 }
 
 .float__item{
-    display: flex;
-    justify-content: space-between;
+    border-bottom: rem(5px) solid transparent;
 
+    &:last-child{
+        border-bottom: 0;
+    }
 }
 
 
