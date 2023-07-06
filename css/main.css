@@ -1096,7 +1096,7 @@ img {
   background: #F8FAF9;
 }
 
-.products__slider {
+.products-slider {
   overflow: hidden;
 }
 
@@ -1530,10 +1530,8 @@ img {
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background: url("https://github.com/volodmen/project3/blob/main/img/splash.jpg?raw=true") center center/cover no-repeat;
 }
 .player__splash:before {
-  content: url("https://github.com/volodmen/project3/blob/main/img/play.png?raw=true");
   position: absolute;
   top: 50%;
   left: 50%;

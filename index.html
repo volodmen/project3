@@ -151,7 +151,7 @@
             </section>
             <section data-sidemenu-theme="black" data-section-id="products" class="section products-section">
                 <div class="container">
-                    <div class="poducts-slider">
+                    <div class="products-slider">
                         <div class="product-slider__arrows">
                             <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev"
                                 data-vector="prev" id="left">
@@ -402,7 +402,7 @@
                                         <div class="product__text">Самые быстрые доски для профессионалов. Размеры
                                             шортбордов позволяют быстро набирать скорость, делать различные трюки на
                                             волне, включая резкие повороты и развороты, флоатеры (проезды по самому
-                                            гребню волны), различные прыжки с вращениями или без, а также катание
+                                            гребню волны), а также катание
                                             в трубах.
                                         </div>
                                         <div class="product__values">
@@ -714,39 +714,40 @@
                 <div class="container">
                     <h2 class="section__title">Закажите доску</h2>
                     <form action="" class="form">
+                        <input type="hidden" name="to" value="testicola@yandex.ru">
                         <div class="form__col">
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name= "name" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="home" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="appartment" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="floor" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -754,7 +755,7 @@
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -882,6 +883,7 @@
     <script src="./scripts/query-3.7.0.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/tabs.js"></script>
     <script src="./scripts/slider.js"></script>
@@ -890,7 +892,6 @@
     <script src="./scripts/player.js"></script>
     <script src="./scripts/map.js"></script>
     <script src="./scripts/menu-acco.js"></script>
-
 
 </body>
 
